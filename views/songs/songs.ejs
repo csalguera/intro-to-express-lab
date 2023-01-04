@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../public/stylesheets/style.css">
+  <title>Songs Page</title>
+</head>
+<body>
+  <h1>Songs</h1>
+  <nav>
+    <a href="../home.ejs">Home</a>
+    <a href="./songs.ejs">Songs</a>
+  </nav>
+  <ul>
+    <% songs.forEach(song => { %> 
+      <li>
+        Is the song <i><%= song.song %></i>
+        from the artist(s) <%= song.artist %>?
+      </li>
+      <b><%= song.correct ? 'Yes' : 'No' %></b>
+    <% }) %> 
+  </ul>
+  <a href="../home/home.ejs">Back to home page</a>
+</body>
+</html>
