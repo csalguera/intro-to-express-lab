@@ -18,8 +18,8 @@
       <li>
         Is the song <i><%= song.song %></i>
         from the artist(s) <%= song.artist %>?
+        <b><%= song.correct ? 'Yes' : 'No' %></b>
       </li>
-      <b><%= song.correct ? 'Yes' : 'No' %></b>
     <% }) %> 
   </ul>
   <a href="/">Back to home page</a>
