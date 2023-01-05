@@ -48,6 +48,10 @@ body > a:hover {
   text-decoration: underline;
 }
 
+p {
+  text-align: center;
+}
+
 li {
   padding: 5px 0;
 }
